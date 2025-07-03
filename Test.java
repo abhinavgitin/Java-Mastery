@@ -283,8 +283,8 @@ class Test {
 
     public static void main(String[] args) {
         System.out.println(coutChars(
-                "cgudllrbrjlgvxuheeuwpewiylhnthzprofdxysmsgwkcztglzedalvcgostfavcmxpcvyhzpqhffojqqytooathdjfxyezuhbpu",
-                "dniciuehstodlqxhhcydvccfpbbpczqdiczfwhsgdbvrgewfyajbahsicalrxhavovgxdwkinrcmwpmpxurkuxtrfdpencvkvxvs"));
+                "abhinav",
+                "dniciuehstodlqxhhcydvccfpbbpmwpmpxurkuxtrfdpencvkvxvs"));
     }
 
     public static int coutChars(String s1, String s2) {
@@ -303,6 +303,6 @@ class Test {
         }
         return deletation;
         // todays work is done
-        
+
     }
 }
