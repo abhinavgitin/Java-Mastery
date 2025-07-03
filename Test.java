@@ -302,5 +302,7 @@ class Test {
             deletation+= Math.abs(char1[i]-char2[i]);
         }
         return deletation;
+        // todays work is done
+        
     }
 }
