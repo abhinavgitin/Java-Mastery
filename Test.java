@@ -279,30 +279,30 @@
 // }
 
 // return delete;
-class Test {
+// class Test {
 
-    public static void main(String[] args) {
-        System.out.println(coutChars(
-                "abhinav",
-                "dniciuehstodlqxhhcydvccfpbbpmwpmpxurkuxtrfdpencvkvxvs"));
-    }
+//     public static void main(String[] args) {
+//         System.out.println(coutChars(
+//                 "abhinav",
+//                 "dniciuehstodlqxhhcydvccfpbbpmwpmpxurkuxtrfdpencvkvxvs"));
+//     }
 
-    public static int coutChars(String s1, String s2) {
-        int char1[] = new int[26];
-        int char2[] = new int[26];
+//     public static int coutChars(String s1, String s2) {
+//         int char1[] = new int[26];
+//         int char2[] = new int[26];
         
-        for ( char c : s1.toCharArray()){
-            char1[c-'a']++;
-        }
-        for ( char c : s2.toCharArray()){
-            char2[c-'a']++;
-        }
-        int deletation =  0;
-        for ( int i = 0 ; i < 26 ; i++){
-            deletation+= Math.abs(char1[i]-char2[i]);
-        }
-        return deletation;
-        // todays work is done
+//         for ( char c : s1.toCharArray()){
+//             char1[c-'a']++;
+//         }
+//         for ( char c : s2.toCharArray()){
+//             char2[c-'a']++;
+//         }
+//         int deletation =  0;
+//         for ( int i = 0 ; i < 26 ; i++){
+//             deletation+= Math.abs(char1[i]-char2[i]);
+//         }
+//         return deletation;
+//         // todays work is done
 
-    }
-}
+//     }
+// }
