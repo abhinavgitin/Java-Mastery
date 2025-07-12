@@ -1,12 +1,14 @@
 public class recursion3 {
     public static void main(String[] args) {
-        printingnums(5);
+        int[] arr = {1, 2, 3, 4, 5};
+        int sum = arraySum(arr, arr.length - 1);
+        System.out.println("Sum of array elements: " + sum);
     }
-    public static void printingnums (int n ){
-        if (n >= 1000){
-            return;
+    public static int arraySum(int[] arr, int idx) {
+        // code here
+        if (idx < 0) {
+            return 0;
         }
-        System.out.println(n);
-        printingnums(n+9);
+        return arr[idx] + arraySum(arr, idx - 1);
     }
 }
