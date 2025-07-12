@@ -1,11 +1,11 @@
 public class arraystest {
     public static void main(String[] args) {
-        int arr[] = {10,10,10,10,10 };
+        int arr[] = { 10, 10, 10, 10, 10 };
         System.out.println("the second largest element is " + secondlargest(arr));
     }
 
     public static int secondlargest(int[] arr) {
-         int largest = arr[0];
+        int largest = arr[0];
         for (int i = 0; i < arr.length; i++) {
 
             if (largest < arr[i]) {
@@ -14,23 +14,22 @@ public class arraystest {
             }
         }
         boolean allfound = false;
-    
+
         for (int j = 0; j < arr.length; j++) {
             if (arr[j] == largest) {
                 arr[j] = 0;
             }
         }
-        for ( int m = 0 ; m < arr.length; m++){
+        for (int m = 0; m < arr.length; m++) {
 
             if (arr[m] == 0) {
                 allfound = true;
-            }else {
+            } else {
                 allfound = false;
                 break;
             }
-        }        
-        
-        
+        }
+
         if (allfound) {
             return -1; // if all elements are same, return -1
         } else {
