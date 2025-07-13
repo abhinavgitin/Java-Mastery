@@ -136,17 +136,17 @@
 //         }
 //     }
 // }
-class recursion2 {
-    public static void main(String[] args) {
-        subsequesces("abc", 0, "");
-    }
-    public static void subsequesces ( String str, int index , String newStr){
-        if (str.length() == index){
-            System.out.println(newStr);
-            return;
-        }
-        char currentChar = str.charAt(index);
-        subsequesces(str, index+1, newStr+currentChar); // 1st wala
-        subsequesces(str, index+1, newStr); // 2nd wala
-    }
-}
+// class recursion2 {
+//     public static void main(String[] args) {
+//         subsequesces("abc", 0, "");
+//     }
+//     public static void subsequesces ( String str, int index , String newStr){
+//         if (str.length() == index){
+//             System.out.println(newStr);
+//             return;
+//         }
+//         char currentChar = str.charAt(index);
+//         subsequesces(str, index+1, newStr+currentChar); // 1st wala
+//         subsequesces(str, index+1, newStr); // 2nd wala
+//     }
+// }
