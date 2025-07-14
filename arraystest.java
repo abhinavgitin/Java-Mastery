@@ -45,47 +45,60 @@
 //     }
 // }
 
-// moving all zeros to the end of the array
+// moving all zeros to the end of the array gfg 2
+// class arraytest {
+//     public static void main(String[] args) {
+//         int arr[] = { 3, 5, 0, 0, 4, 0, 0, 0, 4, 5, 0, 0, 0 };
+//         moveZerosToEnd(arr);
+//     }
+
+//     static void moveZerosToEnd(int arr[]) {
+//         int putnum = 0;
+//         int put = 0;
+//         int zeroCount = 0;
+//         for (int i = 0; i < arr.length; i++) {
+//         if (arr[i] == 0) {
+//         zeroCount++;
+//         }
+//         }
+//         int zeros[] = new int[zeroCount];
+//         int nonZeros[] = new int[(arr.length - zeroCount)];
+
+//         for (int i = 0; i < arr.length; i++) {
+//         if (arr[i] == 0) {
+//         while (put <= zeros.length) {
+//         zeros[put] = arr[i];
+//         put++;
+//         break;
+//         }
+//         } else {
+
+//         while (putnum <= nonZeros.length) {
+//         nonZeros[putnum] = arr[i];
+//         putnum++;
+//         break;
+//         }
+//         }
+
+//         }
+//         for (int j = 0; j < nonZeros.length; j++) {
+//         System.out.print(nonZeros[j] + " ");
+//         }
+//         for (int k = 0; k < zeros.length; k++) {
+//         System.out.print(zeros[k] + " ");
+//         }
+//     }
+// }
+
+// reverse of an array gfg 3
 class arraytest {
-    public static void main(String[] args) {
-        int arr[] = { 3, 5, 0, 0, 4, 0, 0, 0, 4, 5, 0, 0, 0 };
-        moveZerosToEnd(arr);
-    }
-
-    static void moveZerosToEnd(int arr[]) {
-        int putnum = 0;
-        int put = 0;
-        int zeroCount = 0;
-        for (int i = 0; i < arr.length; i++) {
-        if (arr[i] == 0) {
-        zeroCount++;
-        }
-        }
-        int zeros[] = new int[zeroCount];
-        int nonZeros[] = new int[(arr.length - zeroCount)];
-
-        for (int i = 0; i < arr.length; i++) {
-        if (arr[i] == 0) {
-        while (put <= zeros.length) {
-        zeros[put] = arr[i];
-        put++;
-        break;
-        }
-        } else {
-
-        while (putnum <= nonZeros.length) {
-        nonZeros[putnum] = arr[i];
-        putnum++;
-        break;
-        }
-        }
-
-        }
-        for (int j = 0; j < nonZeros.length; j++) {
-        System.out.print(nonZeros[j] + " ");
-        }
-        for (int k = 0; k < zeros.length; k++) {
-        System.out.print(zeros[k] + " ");
+    public void reverseArray(int arr[]) {
+        // code here
+        int index = 0;
+        for ( int i = 0; i <= (arr.length-1)/2 ; i++){
+            index = arr[i];
+            arr[i] = arr[(arr.length-1)-i];
+            arr[(arr.length-1)-i] = index;
         }
     }
 }
