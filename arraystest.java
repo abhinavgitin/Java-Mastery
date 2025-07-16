@@ -104,3 +104,26 @@ class arraytest {
 }
 
 // the next gfg dat 4 is to be done 
+class arraystest {
+    public static void main(String[] args) {
+        int arr[] = { 1, 2, 3, 4, 5 };
+        int d = 2; // Number of positions to rotate
+        reverseArray(arr, d);
+    }
+    public static void reverseArray( int arr[], int d){
+        int n = arr.length;
+        d = d % n; // Handle cases where d >= n
+        int [] temp = new int[n];
+
+        for ( int i = d; i < n; i++){
+            temp[i - d] = arr[i];
+        }
+        for ( int i = 0; i < d; i++){
+            temp[n - d + i] = arr[i];
+        }
+        for (int i = 0; i < n; i++) {
+            System.out.print(temp[i] + " ");
+        }
+        System.out.println();
+    }
+}
