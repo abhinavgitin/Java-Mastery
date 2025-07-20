@@ -306,3 +306,20 @@
 
 //     }
 // }
+// this is to find the lcm of the numbers int i , int j
+class test {
+    public static void main(String[] args) {
+        System.out.println(lcm(5, 10));
+    }
+    public static int lcm(int i, int j) {
+        // code here
+        int max = Math.max(i, j);
+        int lcm = max;
+        while (true) {
+            if (lcm % i == 0 && lcm % j == 0) {
+                return lcm;
+            }
+            lcm += max;
+        }
+    }
+}

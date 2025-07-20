@@ -129,105 +129,35 @@
 // }
 
 //gfg day 5 the next permutation of an array
-// class arraystest {
-//     public static void main(String[] args) {
-//         int arr[] = { 2,4,1,7,5,0};
-//         nextPermutation(arr);
+// 
 
-//     }
-
-//     public static void nextPermutation(int arr[]) {
-//         int n = arr.length;
-//         int index = -1;
-//         boolean foundThePermutation = false;
-//         int justLarger = -1;
-//         int largestNumber = -1;
-//         for (int i = n - 1; i > 0; i--) {
-//             if (!(arr[i] > arr[i - 1])) {
-//                 foundThePermutation = true;
-//                 index = i;
-//                 for (int j = index; j < n; j++) {
-//                     if (arr[j] > arr[i]) {
-//                         largestNumber = arr[j];
-//                     }
-//                     if (arr[j] > arr[i] && arr[j] < largestNumber) {
-//                         justLarger = arr[j];
-//                         break;
-//                     }
-//                 }
-//             }
-
-//         }
-
-//         if (foundThePermutation) {
-//             arr[index] = justLarger;
-//             for (int i = index + 1; i < (arr.length - 1) / 2; i++) {
-//                 int temp = arr[i];
-//                 arr[i] = arr[arr.length - 1 - i];
-//                 arr[arr.length - 1 - i] = temp;
-//             }
-//         } else {
-//             for (int i = 0; i < arr.length / 2; i++) {
-//                 int temp = arr[i];
-//                 arr[i] = arr[arr.length - 1 - i];
-//                 arr[arr.length - 1 - i] = temp;
-//             }
-//         }
-//         for (int i = 0; i < arr.length; i++) {
-//             System.out.print(arr[i] + " ");
-//         }
-//     }
-// }
-
-import java.util.Scanner;
-
-class months {
+class arraystest {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);  
-        System.out.print("Enter the month ");
+        int arr[] = { 3,2,1 };
+        permutation(arr);
+        
+    }
 
-        int month = sc.nextInt();
-        sc.close();
-        switch (month) {
-            case 1:
-                System.out.println("January");
-                break;
-            case 2:
-                System.out.println("February");
-                break;
-            case 3:
-                System.out.println("March");
-                break;
-            case 4:
-                System.out.println("April");
-                break;
-            case 5:
-                System.out.println("May");
-                break;
-            case 6:
-                System.out.println("June");
-                break;
-            case 7:
-                System.out.println("July");
-                break;
-            case 8:
-                System.out.println("August");
-                break;
-            case 9:
-                System.out.println("September");
-                break;
-            case 10:
-                System.out.println("October");
-                break;
-            case 11:
-                System.out.println("November");
-                break;
-            case 12:
-                System.out.println("December");
-                break;
-            default:
-                System.out.println("Invalid month");
-                break;
+    public static void permutation(int arr[]) {
+        int n = arr.length;
+        int lastDig = n - 1;
+        boolean Permutation = false;
+
+        for (int i = lastDig - 1; i >= 0; i--) {
+            if (lastDig > i) {
+                Permutation = true;
+            } else {
+                int index = 0;
+                for (int j = 0; j <= (arr.length - 1) / 2; j++) {
+                    index = arr[i];
+                    arr[i] = arr[(arr.length - 1) - i];
+                    arr[(arr.length - 1) - i] = index;
+                }
+            }
         }
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
     }
 }
