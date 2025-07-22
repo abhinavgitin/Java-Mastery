@@ -307,19 +307,38 @@
 //     }
 // }
 // this is to find the lcm of the numbers int i , int j
-class test {
-    public static void main(String[] args) {
-        System.out.println(lcm(5, 10));
-    }
-    public static int lcm(int i, int j) {
-        // code here
-        int max = Math.max(i, j);
-        int lcm = max;
-        while (true) {
-            if (lcm % i == 0 && lcm % j == 0) {
-                return lcm;
+// class test {
+//     public static void main(String[] args) {
+//         System.out.println(lcm(5, 10));
+//     }
+//     public static int lcm(int i, int j) {
+//         // code here
+//         int max = Math.max(i, j);
+//         int lcm = max;
+//         while (true) {
+//             if (lcm % i == 0 && lcm % j == 0) {
+//                 return lcm;
+//             }
+//             lcm += max;
+//         }
+//     }
+// }
+
+// to find the next prime number 
+// User function Template for Java
+class Test {
+    public static int nextPrime(int n) {
+
+        for ( int i = 2 ; true ; i = i+2 ) {
+            if ( n+1 % i == 0){
+                return n+1;
+            } else {
+                n++;
             }
-            lcm += max;
         }
+    }
+
+    public static void main(String[] args) {
+        System.out.println(nextPrime(10)); // Example usage
     }
 }
