@@ -80,3 +80,7 @@ This directory contains a variety of Java programs focused on practicing core pr
 - This folder is where I work and learn Java daily—it's just for learning and practice.
 - You may need to uncomment or modify code to run specific examples.
 - More programs and topics are being added as I continue my learning
+
+## Extra Notes 
+
+- To display the NaN as the output which actually happens when we divide by zero we have to use the method Double.NaN which will shoe the output as NaN which is not a number 
