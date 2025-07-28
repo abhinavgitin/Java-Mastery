@@ -359,11 +359,19 @@ class Test {
     }
 
     public static void extraChar(String s1, String s2) {
-        for ( int i = 0 ; i < s2.length() ; i++){
-            if (s1.indexOf(s2.charAt(i)) == -1){
-                System.out.println(s2.charAt(i));
+        int charCount[] = new int[26];
+        for (char c : s1.toCharArray()) {
+            charCount[c - 'a']++;
+        }
+        for (char c : s2.toCharArray()) {
+            charCount[c - 'a']--;
+        }
+        for (int i = 0; i < 26; i++) {
+            if (charCount[i] != 0) {
+                System.out.println((char) (i + 'a'));
                 return;
             }
         }
+        System.out.println("No extra character found");
     }
 }
