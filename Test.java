@@ -290,7 +290,7 @@
 //     public static int coutChars(String s1, String s2) {
 //         int char1[] = new int[26];
 //         int char2[] = new int[26];
-        
+
 //         for ( char c : s1.toCharArray()){
 //             char1[c-'a']++;
 //         }
@@ -323,22 +323,47 @@
 //         }
 //     }
 // }
+// to find the prime numbers in the range of 1 to n
+// class Test {
+//     public static void main(String[] args) {
+//         allPrime(20);
+//     }
 
-// to find the next prime number 
+//     public static boolean isPrime(int n) {
+//         if (n <= 1) {
+//             return false;
+//         }
+//         for (int i = 2; i * i <= n; i++) {
+//             if (n % i == 0) {
+//                 return false;
+//             }
+//         }
+//         return true;
+//     }
+
+//     public static void allPrime(int number) {
+//         for ( int i = 2; i <= number; i++){
+//             if (isPrime(i)){
+//                 System.out.println(i);
+//             }
+//         }
+//     }
+// }
+
 // User function Template for Java
 class Test {
-    public static int nextPrime(int n) {
-
-        for ( int i = 2 ; true ; i = i+2 ) {
-            if ( n+1 % i == 0){
-                return n+1;
-            } else {
-                n++;
-            }
-        }
+    public static void main(String[] args) {
+        String s1 = "abcd";
+        String s2 = "aecdb";
+        extraChar(s1, s2);
     }
 
-    public static void main(String[] args) {
-        System.out.println(nextPrime(10)); // Example usage
+    public static void extraChar(String s1, String s2) {
+        for ( int i = 0 ; i < s2.length() ; i++){
+            if (s1.indexOf(s2.charAt(i)) == -1){
+                System.out.println(s2.charAt(i));
+                return;
+            }
+        }
     }
 }
