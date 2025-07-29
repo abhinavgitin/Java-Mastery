@@ -131,33 +131,33 @@
 //gfg day 5 the next permutation of an array
 // 
 
-class arraystest {
-    public static void main(String[] args) {
-        int arr[] = { 3,2,1 };
-        permutation(arr);
+// class arraystest {
+//     public static void main(String[] args) {
+//         int arr[] = { 3,2,1 };
+//         permutation(arr);
         
-    }
+//     }
 
-    public static void permutation(int arr[]) {
-        int n = arr.length;
-        int lastDig = n - 1;
-        boolean Permutation = false;
+//     public static void permutation(int arr[]) {
+//         int n = arr.length;
+//         int lastDig = n - 1;
+//         boolean Permutation = false;
 
-        for (int i = lastDig - 1; i >= 0; i--) {
-            if (lastDig > i) {
-                Permutation = true;
-            } else {
-                int index = 0;
-                for (int j = 0; j <= (arr.length - 1) / 2; j++) {
-                    index = arr[i];
-                    arr[i] = arr[(arr.length - 1) - i];
-                    arr[(arr.length - 1) - i] = index;
-                }
-            }
-        }
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println();
-    }
-}
+//         for (int i = lastDig - 1; i >= 0; i--) {
+//             if (lastDig > i) {
+//                 Permutation = true;
+//             } else {
+//                 int index = 0;
+//                 for (int j = 0; j <= (arr.length - 1) / 2; j++) {
+//                     index = arr[i];
+//                     arr[i] = arr[(arr.length - 1) - i];
+//                     arr[(arr.length - 1) - i] = index;
+//                 }
+//             }
+//         }
+//         for (int i = 0; i < arr.length; i++) {
+//             System.out.print(arr[i] + " ");
+//         }
+//         System.out.println();
+//     }
+// }
