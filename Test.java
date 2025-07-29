@@ -351,27 +351,62 @@
 // }
 
 // User function Template for Java
+// class Test {
+//     public static void main(String[] args) {
+//         String s1 = "abcd";
+//         String s2 = "aecdb";
+//         extraChar(s1, s2);
+//     }
+
+//     public static void extraChar(String s1, String s2) {
+//         int charCount[] = new int[26];
+//         for (char c : s1.toCharArray()) {
+//             charCount[c - 'a']++;
+//         }
+//         for (char c : s2.toCharArray()) {
+//             charCount[c - 'a']--;
+//         }
+//         for (int i = 0; i < 26; i++) {
+//             if (charCount[i] != 0) {
+//                 System.out.println((char) (i + 'a'));
+//                 return;
+//             }
+//         }
+//         System.out.println("No extra character found");
+//     }
+// }
+
+//this is for the anagram check 
+// User function template for Java
 class Test {
     public static void main(String[] args) {
-        String s1 = "abcd";
-        String s2 = "aecdb";
-        extraChar(s1, s2);
+        String S1 = "geeks";
+        String S2 = "skgee";
+        System.out.println(areAnagram(S1, S2));
     }
 
-    public static void extraChar(String s1, String s2) {
-        int charCount[] = new int[26];
-        for (char c : s1.toCharArray()) {
-            charCount[c - 'a']++;
+    static int areAnagram(String S1, String S2) {
+        // code here
+        S1 = S1.toLowerCase();
+        S2 = S2.toLowerCase();
+
+        int letters1[] = new int[26];
+        for (char c : S1.toCharArray()) {
+            letters1[c - 'a']++;
         }
-        for (char c : s2.toCharArray()) {
-            charCount[c - 'a']--;
+        int letters2[] = new int[26];
+        for (char c : S2.toCharArray()) {
+            letters2[c - 'a']++;
         }
+        if (S1.length() != S2.length())
+            return 0;
         for (int i = 0; i < 26; i++) {
-            if (charCount[i] != 0) {
-                System.out.println((char) (i + 'a'));
-                return;
+            if (letters1[i] == letters2[i]) {
+                continue;
+            } else {
+                return 0; // Not an anagram
             }
         }
-        System.out.println("No extra character found");
+        return 1;
     }
 }
