@@ -150,3 +150,24 @@
 //         subsequesces(str, index+1, newStr); // 2nd wala
 //     }
 // }
+class recursion2 {
+    public static void main(String[] args) {
+        int n = 3;
+        System.out.println(towerOfHanoi(n, 0, 0, 0));
+    }
+    public static int towerOfHanoi(int n, int source, int destination, int helper) {
+        // code here
+        // if ( n == 1 ) return 1;
+        // if ( n == 0 ) return 0;
+        if ( n == 1 ){
+            // System.out.println("move disk "+n+" from rod "+source+" to rod "+destination);
+            return 1;
+        }
+        int steps = 0;
+        steps += towerOfHanoi( n - 1 , source , helper , destination );
+        // System.out.println("move disk "+n+" from rod "+source+" to rod "+destination);
+        steps++;
+        steps += towerOfHanoi( n - 1 , helper , destination , source );
+        return steps;
+    }
+}
