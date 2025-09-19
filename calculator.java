@@ -73,7 +73,7 @@ class calculator {
         return output;
     }
 
-    public void main(String args[]) {
+    public static void main(String args[]) {
         calculator  call = new calculator();
         System.out.println("enter 1 for addition");
         System.out.println("enetr 2 for subtraction");
