@@ -1,7 +1,7 @@
 import java.util.*;
 
 class arrays {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter the rows for the matrix");
@@ -32,20 +32,20 @@ class arrays {
                     System.out.println("data found at row " + (1 + m) + " and column at " + (1 + n));
                     found = true;
                     // break ;
-                    // add this if you want to just find the first occurence;
+                    // add this if you want to just find the first occurrence;
                 } else {
                     continue;
                 }
             }
         }
         if (!found) {
-            // i guess this is the best way to write a counditional statement
+            // i guess this is the best way to write a conditional statement
             System.out.println("not found ");
         }
         for (int i = 0; i < rows; i++) {
             // for the rows nesting
             for (int j = 0; j < clo; j++) {
-                // this is for the cloumns nesting
+                // this is for the columns nesting
                 System.out.printf("%4d", matrix[i][j]);
             }
             System.out.println();
