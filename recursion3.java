@@ -27,5 +27,6 @@ class recursion3 {
             String newStr = str.substring(0, i) + str.substring(i+1);
             permutationOfStr(newStr, permutation + currChar);
         }
+        return res;
     }
 }
