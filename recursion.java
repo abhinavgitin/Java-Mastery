@@ -101,30 +101,29 @@
 //     }
 // }
 
-// class recursion {
-//     // this is tp print the fibonacci series which goes like 0 1 1 2 3 5 8 13 and so
-//     // on this shows that we need to add the previous two numbers
-//     public static void fibo ( int start , int previousToPrevious, int n){
-//         if (n==0)
-//         return;
-//         // if the number reaches 0 on desercing then it returns;
-//         int justPrevious = start+previousToPrevious;
-//         System.out.println(justPrevious);
-//         // it is like if start = 0 and previoustoprevious = 1 then the justPrevious = 1 and thus it becomes 0 1 "1" this one is printed out here 
-//         // now we need to add the last two numbers which is the "1 1" where the first 1 was previousToPrevious and the second 1 was justPrevious so we give the parametres like 
-//         //
-//         fibo(previousToPrevious,justPrevious,n-1);
-//     }
+class recursion {
+    // this is tp print the fibonacci series which goes like 0 1 1 2 3 5 8 13 and so
+    // on this shows that we need to add the previous two numbers
+    public static void fibo ( int start , int previousToPrevious, int n){
+        if (n==0) return;
+        // if the number reaches 0 on desercing then it returns;
+        int justPrevious = start+previousToPrevious;
+        System.out.println(justPrevious);
+        // it is like if start = 0 and previoustoprevious = 1 then the justPrevious = 1 and thus it becomes 0 1 "1" this one is printed out here 
+        // now we need to add the last two numbers which is the "1 1" where the first 1 was previousToPrevious and the second 1 was justPrevious so we give the parametres like 
+        //
+        fibo(previousToPrevious,justPrevious,n-1);
+    }
 
-//     public static void main(String args[]) {
-//         int a = 0, b = 1;
-//         System.out.println(a);
-//         System.out.println(b);
-//         int n = 47;
-//         fibo(a, b, n -2);
+    public static void main(String[] args) {
+        int a = 0, b = 1;
+        System.out.println(a);
+        System.out.println(b);
+        int n = 47;
+        fibo(a, b, n -2);
 
-//     }
-// }
+    }
+}
 
 // class recursion {
 
