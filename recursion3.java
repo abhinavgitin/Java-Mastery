@@ -31,7 +31,6 @@ class recursion3 {
         }
         return arr[idx] + arraySum(arr, idx - 1);
     }
-
     // Print all permutations of a string
     public static void permutationOfStr(String str, String permutation) {
         if (str.length() == 0) {
