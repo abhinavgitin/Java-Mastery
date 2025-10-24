@@ -38,11 +38,11 @@ class recursion3 {
             System.out.println(permutation);
             return;
         }
-        for (int i = 0; i < str.length(); i++) {
+        for (int i = 0; i< str.length(); i++) {
             char currChar = str.charAt(i);
             String newStr = str.substring(0, i) + str.substring(i + 1);
             permutationOfStr(newStr, permutation + currChar);
         }
-        // no return value for void method
+        // this is a test for the git push
     }
 }
