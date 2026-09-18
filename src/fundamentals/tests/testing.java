@@ -1,3 +1,5 @@
+﻿package fundamentals.tests;
+
 public class testing {
     public static void main(String[] args) {
         calculator calc = new calculator();

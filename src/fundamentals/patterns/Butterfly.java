@@ -1,3 +1,5 @@
+﻿package fundamentals.patterns;
+
 import java.util.*;
 
 class Butterfly
@@ -50,3 +52,4 @@ class Butterfly
         sc.close();
 	}
 }
+

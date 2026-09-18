@@ -1,3 +1,5 @@
+﻿package fundamentals.tests;
+
 import java.util.*;
 class Solutions {
     public static void main(String[] args) {
@@ -35,3 +37,4 @@ class Solutions {
         }
     }
 }
+

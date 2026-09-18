@@ -1,3 +1,5 @@
+﻿package fundamentals.recursion;
+
 public class RecursiveBinarySearch {
 
     static void main() {
@@ -24,3 +26,4 @@ public class RecursiveBinarySearch {
         }
     }
 }
+

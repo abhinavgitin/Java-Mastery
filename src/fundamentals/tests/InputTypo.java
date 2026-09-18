@@ -1,3 +1,5 @@
+﻿package fundamentals.tests;
+
 /*
  * The problem is when we need to take the input we do the work as
  * sysop and then the message, and then

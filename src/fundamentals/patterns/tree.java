@@ -1,3 +1,5 @@
+﻿package fundamentals.patterns;
+
 class tree {
     public static void main(String args[]) {
         for (int i = 1; i <= 7; i++) {
@@ -17,3 +19,4 @@ class tree {
         }
     }
 }
+

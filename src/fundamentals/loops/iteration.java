@@ -1,3 +1,5 @@
+﻿package fundamentals.loops;
+
 import java.util.*;
 class iteration {
     public static void main (String args []){
@@ -25,3 +27,4 @@ class iteration {
      * the breath or it is equal to the number 1 from where the process and priniting starts 
      */
 }
+

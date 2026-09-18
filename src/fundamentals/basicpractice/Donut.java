@@ -1,3 +1,5 @@
+﻿package fundamentals.basicpractice;
+
 public class Donut {
     // this java file makes a rotating donut in one new window
     public static void main(String[] args) {
@@ -23,3 +25,4 @@ public class Donut {
         frame.setVisible(true);
     }
 }
+

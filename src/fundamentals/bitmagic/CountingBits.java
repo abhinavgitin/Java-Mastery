@@ -1,3 +1,5 @@
+﻿package fundamentals.bitmagic;
+
 class CountingBits {
 
     static void main() {

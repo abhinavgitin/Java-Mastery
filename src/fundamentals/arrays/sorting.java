@@ -1,3 +1,5 @@
+﻿package fundamentals.arrays;
+
 // import java.util.*;
 // class sorting {
 //     public static void main (String args[]){
@@ -144,3 +146,4 @@ class sorting {
         sc.close();
     }
 }
+

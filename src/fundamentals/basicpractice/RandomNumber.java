@@ -1,3 +1,5 @@
+﻿package fundamentals.basicpractice;
+
 import java.util.*;
 
 class RandomNumber {
@@ -41,3 +43,4 @@ class RandomNumber {
                 + "\nProbability: " + (maxRecorded / (double) noOfTimes));
     }
 }
+

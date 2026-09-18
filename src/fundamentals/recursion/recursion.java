@@ -1,3 +1,5 @@
+﻿package fundamentals.recursion;
+
 // class recursion {
 //     public static void main(String args[]) {
 //         int number = 0;
@@ -255,3 +257,4 @@ class recursion {
 
 //     }
 // }
+

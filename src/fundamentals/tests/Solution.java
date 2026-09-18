@@ -1,3 +1,5 @@
+﻿package fundamentals.tests;
+
 import java.util.*;
 class Solution {
     public static void main(String[] args) {
@@ -37,3 +39,4 @@ class Solution {
         return String.valueOf(Integer.parseInt(sum1) + Integer.parseInt(sum2));
     }
 }
+

@@ -1,3 +1,5 @@
+﻿package fundamentals.tests;
+
 import java.util.*;
 
 class TestAsciiCharacters {

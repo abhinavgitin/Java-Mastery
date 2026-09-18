@@ -1,4 +1,4 @@
-package com.wordcounter;
+package fundamentals.smallprojects;
 import java.util.Scanner;
 
 public class WordCounter {

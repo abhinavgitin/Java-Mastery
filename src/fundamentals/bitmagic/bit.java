@@ -1,3 +1,5 @@
+﻿package fundamentals.bitmagic;
+
 import java.io.*;
 class bit {
     public static void main (String args []) throws IOException{
