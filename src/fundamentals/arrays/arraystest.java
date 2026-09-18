@@ -1,3 +1,4 @@
+package fundamentals.arrays;
 // public class arraystest {
 //     public static void main(String[] args) {
 //         int arr[] = { 10, 10, 10, 10, 10 };

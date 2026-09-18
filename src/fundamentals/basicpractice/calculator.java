@@ -1,3 +1,5 @@
+package fundamentals.basicpractice;
+
 import java.util.*;
 
 class calculator {

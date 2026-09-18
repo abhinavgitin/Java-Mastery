@@ -1,3 +1,5 @@
+package fundamentals.arrays;
+
 import java.util.*;
 
 class arrays {
