@@ -1,4 +1,4 @@
-﻿package fundamentals.patterns;
+package fundamentals.patterns;
 
 class tree {
     public static void main(String args[]) {

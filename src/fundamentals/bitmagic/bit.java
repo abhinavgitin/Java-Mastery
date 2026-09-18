@@ -1,4 +1,4 @@
-﻿package fundamentals.bitmagic;
+package fundamentals.bitmagic;
 
 import java.io.*;
 class bit {

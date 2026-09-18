@@ -1,4 +1,4 @@
-﻿package fundamentals.tests;
+package fundamentals.tests;
 
 /*
  * The problem is when we need to take the input we do the work as

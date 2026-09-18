@@ -1,4 +1,4 @@
-﻿package fundamentals.inputoutput;
+package fundamentals.inputoutput;
 
 /******************************************************************************
 

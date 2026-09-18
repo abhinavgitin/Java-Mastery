@@ -1,4 +1,4 @@
-﻿package fundamentals.matrix;
+package fundamentals.matrix;
 
 class Matrix {
     public static void main(String args[]) {

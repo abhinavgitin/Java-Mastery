@@ -1,4 +1,4 @@
-﻿package fundamentals.basicpractice;
+package fundamentals.basicpractice;
 
 import java.util.*;
 

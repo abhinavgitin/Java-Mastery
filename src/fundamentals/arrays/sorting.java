@@ -1,4 +1,4 @@
-﻿package fundamentals.arrays;
+package fundamentals.arrays;
 
 // import java.util.*;
 // class sorting {

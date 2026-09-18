@@ -1,4 +1,4 @@
-﻿package fundamentals.tests;
+package fundamentals.tests;
 
 import java.util.*;
 class Solution {

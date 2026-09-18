@@ -1,4 +1,4 @@
-﻿package fundamentals.tests;
+package fundamentals.tests;
 
 // class Test {
 //     public static void main (String args []){

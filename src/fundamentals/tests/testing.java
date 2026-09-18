@@ -1,4 +1,6 @@
-﻿package fundamentals.tests;
+package fundamentals.tests;
+
+import fundamentals.basicpractice.calculator;
 
 public class testing {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-﻿package fundamentals.patterns;
+package fundamentals.patterns;
 
 import java.util.*;
 

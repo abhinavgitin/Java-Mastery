@@ -2,7 +2,7 @@ package fundamentals.basicpractice;
 
 import java.util.*;
 
-class calculator {
+public class calculator {
     public int input, first_num, second_num;
     double output;
     public Scanner sc = new Scanner(System.in); // created method for taking input

@@ -1,4 +1,4 @@
-﻿package fundamentals.loops;
+package fundamentals.loops;
 
 import java.util.*;
 class iteration {

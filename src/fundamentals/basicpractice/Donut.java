@@ -1,4 +1,4 @@
-﻿package fundamentals.basicpractice;
+package fundamentals.basicpractice;
 
 public class Donut {
     // this java file makes a rotating donut in one new window

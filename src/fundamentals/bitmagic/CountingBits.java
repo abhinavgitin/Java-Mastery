@@ -1,8 +1,8 @@
-﻿package fundamentals.bitmagic;
+package fundamentals.bitmagic;
 
 class CountingBits {
 
-    static void main() {
+    static void main( String[] args ) {
         CountingBits bits = new CountingBits();
         for ( int i : bits.countBits(2)) {
             System.out.println(i+" ");
