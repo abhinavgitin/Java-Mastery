@@ -2,10 +2,10 @@ package practise;
 
 import java.util.Scanner;
 
-public class InputItem {
+public class InputStream {
     private static final Scanner sc = new Scanner(System.in);
     String inputItemName() {
-        System.out.print("Enter the name of the Item  : ");
+        System.out.print("Enter the name : ");
         return sc.nextLine();
     }
     float inputAmount() {
@@ -27,5 +27,15 @@ public class InputItem {
     String inputFruitName() {
         System.out.print("Enter the name of the fruit : ");
         return sc.nextLine();
+    }
+    String inputPlaceCoordinaes() {
+        System.out.print("Enter the Coordinates of the place : ");
+        return sc.nextLine();
+    }
+    float inputRating() {
+        System.out.print("Enter the Rating for the place : ");
+        float rating = sc.nextFloat();
+        sc.nextLine();
+        return rating;
     }
 }

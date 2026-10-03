@@ -1,18 +1,28 @@
 package practise;
 
 public class Item {
-    private final String itemName;
-    private final int quantity;
-    private final float amount;
+    private String name;
+    private int quantity;
+    private float amount;
 
-    public Item(String itemName, int quantity, float amount) {
-        this.itemName = itemName;
+    public Item(int quantity, float amount) {
+        this.quantity = quantity;
+        this.amount = amount;
+    }
+
+    public Item(String name, float amount) {
+        this.name = name;
+        this.amount = amount;
+    }
+
+    public Item(String name, int quantity, float amount) {
+        this.name = name;
         this.quantity = quantity;
         this.amount = amount;
     }
 
 //    public String getItemName() {
-//        return itemName;
+//        return name;
 //    }
 //    public int getQuantity() {
 //        return quantity;
@@ -23,6 +33,6 @@ public class Item {
 
     @Override
     public String toString() {
-        return "Item{" + "itemName='" + itemName + '\'' + ", quantity=" + quantity + ", amount=" + amount + '}';
+        return "Item{" + "name='" + name + '\'' + ", quantity=" + quantity + ", amount=" + amount + '}';
     }
 }

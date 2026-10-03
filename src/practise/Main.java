@@ -4,7 +4,7 @@ public class Main {
     static void main() {
         Inventory inventory = new Inventory();
 
-        InputItem input = new InputItem();
+        InputStream input = new InputStream();
 
 //        Item item1 = new Item (
 //                input.inputItemName(),
@@ -28,10 +28,9 @@ public class Main {
         );
 
         Fruit item5 = new Fruit (
-                input.inputItemName(),
+                input.inputFruitName(),
                 input.inputQuantity(),
                 input.inputAmount(),
-                input.inputFruitName(),
                 input.inputFruitType()
         );
 //        inventory.addItem(item1);
@@ -40,6 +39,15 @@ public class Main {
         inventory.addItem(item4);
         inventory.addItem(item5);
 
+        // now instead of making the new Fruit new Item all the time now i can do :
+        inventory.addItem("Banana", "African", 78, 12); // for the fruits
+        inventory.addItem("Annapurna", 30000f, "28.596111, 83.820274", 10.0f ); // is for place
+        inventory.addItem(
+                input.inputItemName(),
+                input.inputAmount(),
+                input.inputPlaceCoordinaes(),
+                input.inputRating()
+        );
         System.out.println();
         inventory.displayItems();
     }

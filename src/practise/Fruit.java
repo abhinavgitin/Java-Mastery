@@ -4,8 +4,8 @@ public class Fruit extends Item {
     String fruitName;
     String type;
 
-    public Fruit(String itemName, int quantity, float amount, String fruitName, String type) {
-        super(itemName, quantity, amount);
+    public Fruit(String fruitName, int quantity, float amount, String type) {
+        super(quantity, amount);
         this.fruitName = fruitName;
         this.type = type;
     }
